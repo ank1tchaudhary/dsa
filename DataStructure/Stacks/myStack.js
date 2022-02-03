@@ -3,7 +3,7 @@
 //pop : O(1)
 //push : O(1)
 //peek : O(1)
-// array
+// array without using inbuilt functin
 
 class MyStack{
     constructor(){
