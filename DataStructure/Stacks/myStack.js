@@ -8,24 +8,21 @@
 class MyStack{
     constructor(){
         this.arr=[];
-        this.length = 0;
     }
 
     push(value){
-        this.arr[this.length] = value;
-        this.length++;
-        return this.arr;
+        this.arr[this.arr.length] = value;
+        return this;
     }
 
     
     pop(){
         this.arr.length--;
-        this.length--;
-        return this.arr;
+        return this;
     }
 
     peek(){
-        return this.arr[this.length-1];
+        return this.arr[this.arr.length-1];
     }
 
     lookup(index){
@@ -43,6 +40,6 @@ stack.push(10);
 stack.push(20);
 stack.push(30);
 stack.pop();
-// console.log(stack.peek());
-console.log(stack.lookup(2));
-// console.log(stack)
+console.log(stack)
+console.log(stack.lookup(1));
+console.log(stack.peek());
