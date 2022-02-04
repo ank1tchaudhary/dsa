@@ -40,6 +40,7 @@ stack.push(10);
 stack.push(20);
 stack.push(30);
 stack.pop();
+stack.pop();
 console.log(stack)
 console.log(stack.lookup(1));
 console.log(stack.peek());
